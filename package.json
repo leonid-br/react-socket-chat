@@ -1,0 +1,14 @@
+{
+  "name": "react-socket-chat",
+  "packageManager": "yarn@3.6.1",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "scripts": {
+    "dev:client": "yarn --cwd client start",
+    "dev:server": "yarn --cwd server dev",
+    "dev": "concurrently \"yarn dev:client\" \"yarn dev:server\""
+  }
+}
